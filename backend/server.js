@@ -7,8 +7,14 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-// Middleware
-app.use(cors());
+
+app.use(cors({
+  origin: 'https://learning-project-qe5qpj76t-venky24102004s-projects.vercel.app/', // Replace with your frontend's URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed HTTP methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Allowed headers
+}));
+
+// Middleware app.use(cors());
 app.use(bodyParser.json());
 
 // MongoDB URI from environment variables
