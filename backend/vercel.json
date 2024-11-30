@@ -15,5 +15,12 @@
   "env": {
     "MONGO_URI": "mongodb+srv://venkeyvenkatesan47:09xxxY3O4CLivm2F@attendance.mulzg.mongodb.net/ECE",
     "PORT": "5000"
+  },
+  "functions": {
+    "api/*.js": {
+      "memory": 1024, 
+      "maxDuration": 10 
+    }
   }
 }
+
