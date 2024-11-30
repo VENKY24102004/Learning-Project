@@ -8,8 +8,12 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/(.*)",
       "dest": "server.js"
     }
-  ]
+  ],
+  "env": {
+    "MONGO_URI": "mongodb+srv://venkeyvenkatesan47:09xxxY3O4CLivm2F@attendance.mulzg.mongodb.net/ECE",
+    "PORT": "5000"
+  }
 }
